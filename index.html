@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#Projects").click(function(){
+    $("About Me").hide();
+  });
+  $("#Projects").click(function(){
+    $("About Me").show();
+  });
+});
+</script>
 </head>
 
 
+
 <body>
+	<div id='About Me'>
+		<p> Test 1> </p>
+	</div>
+
+	<div id='Projects'>
+		<p> Test 2> </p>
+	</div>
+
+	<div id='Resume'>
+		<p> Test 3> </p>
+	</div>
+
+	<div id='Contact Me'>
+		<p> Test 4> </p>
+	</div>
 	<p>Hey, this is a work in progress! Check back later for COOL NEW STUFF!!!</p>
 </body>
 
