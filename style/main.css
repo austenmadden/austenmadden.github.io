@@ -3,12 +3,14 @@ html {
 }
 
 ul {
-  display: inline;
+  display: inline-block;
+  list-style-type: none;
 }
 
 li {
   float: left;
-
+  width: auto;
+  margin: 15px;
 }
 
 .select {
