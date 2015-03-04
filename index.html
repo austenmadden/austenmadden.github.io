@@ -13,29 +13,71 @@
 		
 		<title>Austen Madden</title>
 	</head>
+	
+	<script>
+		$(document).ready(function(){ 
+						   
+			$("#about").click(function() {
+				$(".about").show(); 
+				$(".home").hide();
+				$(".social").hide();
+				$(".contact").hide();
+			})
+			
+			$("#home").click(function() {
+				$(".home").show(); 
+				$(".about").hide();
+				$(".social").hide();
+				$(".contact").hide();
+			})
+			
+			$("#social").click(function() {
+				$(".social").show(); 
+				$(".home").hide();
+				$(".about").hide();
+				$(".contact").hide();
+			})
+			
+			$("#contact").click(function() {
+				$(".contact").show(); 
+				$(".home").hide();
+				$(".social").hide();
+				$(".about").hide();
+			})
+		});
+	</script>
+	
 	<body>
+	
 	<div class = "select">
 		<ul>
-			<li><i class="fa fa-home fa"></i> Home</li>
-			<li><i class="fa fa-newspaper-o fa"></i> About</li>
+			<li id = "home"><i class="fa fa-home fa"></i> Home</li>
+			<li id = "about"><i class="fa fa-newspaper-o fa"></i> About</li>
 			<li><a href="https://drive.google.com/file/d/0B4z6_BbXe7RwQmwxOUpSY2JnTVk/view?usp=sharing"><i class="fa fa-file-text-o fa"></i> Resume</a></li>
-			<li><i class="fa fa-laptop fa"></i> Social</li>
-			<li><i class="fa fa-comment fa"></i> Contact</li>
+			<li id = "social"><i class="fa fa-laptop fa"></i> Social</li>
+			<li id = "contact"><i class="fa fa-comment fa"></i> Contact</li>
 		</ul>
-		
-		
 	</div>
-		<div class = "home">
-			<P>Hi, I'm Austen Madden, and welcome to my site!</p>
-		</div>
 	
-		<div class = "about">
-		
-		</div>
-		
-		<div class="social-links">
-			<a href="https://www.linkedin.com/in/austenmadden/"><i class="fa fa-linkedin fa-3x"></i></a>
-			<a href="https://github.com/austenmadden/"><i class="fa fa-github fa-3x"></i>
-		</div>
+	<div class = "home">
+		<P>Hi, I'm Austen Madden, and welcome to my site!</p>
+	</div>
+
+	<div class = "about">
+		<p>I'm a Computer Science student at Ohio State with an interest in both Web Development and Desktop Application Development.<br><br>
+			  This summer I interned with <a href="http://www.nationwide.com/">Nationwide</a> Innovative Solutions, developing their Salesforce platform and still work there part time.</p>
+	</div>
+	
+	
+	<div class = "contact">
+		<p>Coming Soon!</p>
+	</div>
+	
+	<div class="social">
+	<ul>
+		<li><a href="https://www.linkedin.com/in/austenmadden/"><i class="fa fa-linkedin fa-5x"></i></a></li>
+		<li><a href="https://github.com/austenmadden/"><i class="fa fa-github fa-5x"></i></li>
+	</ul>
+	</div>
 	</body>
 </html>
