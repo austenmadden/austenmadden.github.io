@@ -12,6 +12,7 @@ li {
   float: left;
   width: auto;
   margin: 15px;
+ 
 }
 
 .select {
@@ -31,16 +32,23 @@ li {
   margin: 0;
 }
 
+.home {
+	cursor: pointer;
+}
+
   .about {
   display: none;
+  cursor: pointer;
 }
 
   .social {
   display: none;
+  cursor: pointer;
 }
 
   .contact {
   display: none;
+  cursor: pointer;
 }
 
 p {
