@@ -16,35 +16,36 @@
 	
 	<script>
 		$(document).ready(function(){
-			$(".about").fadeIn(); 
+			$(".about").fadeIn();
+			var navHeight = parseInt($('.select').css('height')); 
 						   
 			$("#about").click(function() {
 				$('html, body').animate({
-                        scrollTop: $(".about").offset().top
+                        scrollTop: $(".about").offset().top - navHeight
                     }, 1000);
 			})
 
 			$("#experience").click(function() {
 				$('html, body').animate({
-                        scrollTop: $(".companies").offset().top
+                        scrollTop: $(".companies").offset().top - navHeight
                     }, 1000);
 			})
 
 			$("#projects").click(function() {
 				$('html, body').animate({
-                        scrollTop: $(".projects").offset().top
+                        scrollTop: $(".projects").offset().top - navHeight
                     }, 1000);
 			})
 			
 			$("#home").click(function() {
 				$('html, body').animate({
-                        scrollTop: $(".home").offset().top
+                        scrollTop: $(".home").offset().top - navHeight
                     }, 1000);
 			})
 			
 			$("#social").click(function() {
 				$('html, body').animate({
-                        scrollTop: $(".social").offset().top
+                        scrollTop: $(".social").offset().top - navHeight
                     }, 1000);
 			})
 			
@@ -56,7 +57,6 @@
 	
 	<div class = "select">
 		<ul>
-			<li id = "home">Home</li>
 			<li id = "about">About</li>
 			<li id = "experience">Experience</li>
 			<li id = "projects">Projects</li>
@@ -65,7 +65,7 @@
 	</div>
 	<div class = "content">
 		<div class = "home">
-			<P>Hi, I'm Austen Madden, a software developer from Columbus, Ohio. <br/><br/> Scroll down to learn more about me.</p>
+			<P>Hi, I'm Austen Madden, a software developer from Columbus, Ohio.</p>
 		</div>
 
 		<div class = "about">
