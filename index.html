@@ -15,35 +15,40 @@
 	</head>
 	
 	<script>
-		$(document).ready(function(){ 
+		$(document).ready(function(){
+			$(".about").fadeIn(); 
 						   
 			$("#about").click(function() {
-				$(".about").fadeIn(); 
-				$(".home").hide();
-				$(".social").hide();
-				$(".contact").hide();
+				$('html, body').animate({
+                        scrollTop: $(".about").offset().top
+                    }, 1000);
+			})
+
+			$("#experience").click(function() {
+				$('html, body').animate({
+                        scrollTop: $(".companies").offset().top
+                    }, 1000);
+			})
+
+			$("#projects").click(function() {
+				$('html, body').animate({
+                        scrollTop: $(".projects").offset().top
+                    }, 1000);
 			})
 			
 			$("#home").click(function() {
-				$(".home").fadeIn(); 
-				$(".about").hide();
-				$(".social").hide();
-				$(".contact").hide();
+				$('html, body').animate({
+                        scrollTop: $(".home").offset().top
+                    }, 1000);
 			})
 			
 			$("#social").click(function() {
-				$(".social").fadeIn(); 
-				$(".home").hide();
-				$(".about").hide();
-				$(".contact").hide();
+				$('html, body').animate({
+                        scrollTop: $(".social").offset().top
+                    }, 1000);
 			})
 			
-			$("#contact").click(function() {
-				$(".contact").fadeIn(); 
-				$(".home").hide();
-				$(".social").hide();
-				$(".about").hide();
-			})
+
 		});
 	</script>
 	
@@ -51,29 +56,37 @@
 	
 	<div class = "select">
 		<ul>
-			<li id = "home"><i class="fa fa-home fa"></i> Home</li>
-			<li id = "about"><i class="fa fa-newspaper-o fa"></i> About</li>
-			<li id = "social"><i class="fa fa-comment-o fa"></i> Social</li>
+			<li id = "home">Home</li>
+			<li id = "about">About</li>
+			<li id = "experience">Experience</li>
+			<li id = "projects">Projects</li>
+			<li id = "social"> Social</li>
 		</ul>
 	</div>
 	<div class = "content">
 		<div class = "home">
-			<P>Hi, I'm Austen Madden</p>
+			<P>Hi, I'm Austen Madden, a software developer from Columbus, Ohio. <br/><br/> Scroll down to learn more about me.</p>
 		</div>
 
 		<div class = "about">
-			<img class="img-circle" src="img/headshot.jpg"></img>
-			<p>In December, I'll be finishing up my undergraduate studies at the Ohio State University, studying Computer Science Engineering. In summer 2015, I started with JPMorgan Chase as an Android Developer and currently work there part time; it introduced me to mobile developement and I've been hooked since. <br/><br/>
+			<div class = "bio">
+				<img class="img-circle" src="img/headshot.jpg"></img>
+				<p>In December I'll be finishing up my undergraduate studies at the Ohio State University, with my major in Computer Science & Engineering. In Summer 2015, I started with JPMorgan Chase as an Android Developer and currently work there part time; I'm interested mobile developement but do occasionally tinker and explore other technology. <br/><br/>
 
-			I currently work as a mobile developer at JPMorgan Chase. Outside of software, I enjoy video games and outdoorsy activities like backpacking. Like games too? Add me on steam: Maddahain. I'm also learning the banjo, which is a pretty rad instrument. </P>
-		</div>
-		
-		<div class = "contact">
-			<p>Coming Soon!</p>
-		</div>
-		
-		<div class="social">
-			<ul>
+				Outside of software, I enjoy video games and outdoorsy activities like backpacking. Like games too? Feel free to dd me on steam: Maddahain. I'm also learning the banjo, which is a pretty rad instrument. </P>
+			</div>
+
+			<div class = "companies">
+				<h1> Work Experience </h1>
+				<p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class = "projects">
+				<h1> Projects </h1>
+				<p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class = "social">
+				<ul>
 				<li><a href="https://www.linkedin.com/in/austenmadden/"><i class="fa fa-linkedin-square fa-5x"></i></a></li>
 				<li><a href="https://github.com/austenmadden/"><i class="fa fa-github-square fa-5x"></i></a></li>
 
@@ -83,7 +96,10 @@
 
 				
 			</ul>
+			</div>
+
 		</div>
+		
 	</div>
 
 	</body>

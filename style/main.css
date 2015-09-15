@@ -20,19 +20,26 @@ li {
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
+
 }
 
 .select {
   font-family: Helvetica, sans-serif;
-  font-size: 20pt;
+  font-size: 16pt;
   text-align: center;
   margin: 0px;
   background-color: white;
   color: #bb0000;
   position: fixed;
   top: 0;
+  overflow: hidden;
   width: 100%;
   border-bottom: solid #E9E9E9 1px;
+}
+
+.select li {
+    font-size: 16pt;
+    font-weight: 200;
 }
 
 .select a {
@@ -46,7 +53,7 @@ body {
 }
 
 .home {
-  
+  padding-bottom: 20px
 }
 
 .about {
@@ -58,8 +65,8 @@ body {
 }
 
 .social {
-
-  display: none;
+  background-color: white;
+  padding-top: 30px;
 
 }
 
@@ -93,6 +100,26 @@ body {
   cursor: pointer;
 }
 
+#projects {
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+#projects:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#experience {
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+}
+
+#experience:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .socialHeader a {
   text-decoration: none;
   color: white;
@@ -115,9 +142,8 @@ body {
 }
 
 div.content {
-  margin-top: 90px;
+  margin-top: 70px;
   padding-top: 40px;
-  padding-bottom: 10px;
   width: 100%;
   margin-left: 0px;
   margin-right: 0px;
@@ -133,32 +159,34 @@ p {
   font-size: 20pt;
   line-height: 100%;
   font-weight: 500;
-  text-align: center;
+  text-align: justify;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   max-width: 768px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
 }
 
 .social a:link {
     text-decoration: none;
-	 color: black;
+	 color: #bb0000;
 }
 
 .social a:visited {
     text-decoration: none;
-	color: black;
+	color: #bb0000;
 }
 
 .social a:hover {
     text-decoration: none;
-	color: white;
+	color: #666666;
 
 }
 
 .social a:active {
     text-decoration: none;
-	color: black;
+	color: #bb0000;
 }
 
 .img-circle {
@@ -166,9 +194,40 @@ p {
     width:40%; 
     max-width: 400px;
     height: auto;
+    padding-bottom: 10px;
+}
+
+div.bio {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #bb0000;
 }
 
 div.companies {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+div.companies p {
+  color: black;
+}
+
+div.projects {
   background-color: #666666;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+div.companies h1 {
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  color: white;
+  padding-bottom: 10px;
 }
 
