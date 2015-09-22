@@ -72,6 +72,7 @@ body {
 }
 
 .about {
+  background-color: #bb0000;
   display: none;
 }
 
@@ -236,6 +237,7 @@ div.companies {
 }
 
 div.skills {
+  background-color: #bb0000;
   padding-top: 30px;
   padding-bottom: 30px;
 }
