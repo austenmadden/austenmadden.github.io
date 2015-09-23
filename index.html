@@ -29,7 +29,9 @@
                         scrollTop: $(".about").offset().top - navHeight
                     }, 1000);
 				$(".select").css("height", "");
-				$("#nav").css("display", "none");
+				if (mobileMenuOn) {
+					$("#nav").css("display", "none");
+				}
 			})
 
 			$("#experience").click(function() {
@@ -37,7 +39,9 @@
                         scrollTop: $(".companies").offset().top - navHeight
                     }, 1000);
 				$(".select").css("height", "");
-				$("#nav").css("display", "none");
+				if (mobileMenuOn) {
+					$("#nav").css("display", "none");
+				}
 			})
 
 			$("#projects").click(function() {
@@ -45,7 +49,9 @@
                         scrollTop: $(".projects").offset().top - navHeight
                     }, 1000);
 				$(".select").css("height", "");
-				$("#nav").css("display", "none");
+				if (mobileMenuOn) {
+					$("#nav").css("display", "none");
+				}
 			})
 			
 			$("#home").click(function() {
@@ -53,7 +59,9 @@
                         scrollTop: $(".home").offset().top - navHeight
                     }, 1000);
 				$(".select").css("height", "");
-				$("#nav").css("display", "none");
+				if (mobileMenuOn) {
+					$("#nav").css("display", "none");
+				}
 			})
 			
 			$("#social").click(function() {
@@ -61,7 +69,9 @@
                         scrollTop: $(".social").offset().top - navHeight
                     }, 1000);
 				$(".select").css("height", "");
-				$("#nav").css("display", "none");
+				if (mobileMenuOn) {
+					$("#nav").css("display", "none");
+				}
 			})
 
 			$("#skills").click(function() {
@@ -69,7 +79,9 @@
                         scrollTop: $(".skills").offset().top - navHeight
                     }, 1000);
 				$(".select").css("height", "");
-				$("#nav").css("display", "none");
+				if (mobileMenuOn) {
+					$("#nav").css("display", "none");
+				}
 			})
 
 			$("#mobile").click(function() {
@@ -89,8 +101,10 @@
   			// This will execute whenever the window is resized
   			width = $(window).width(); // New width
   			if (width >= 450) {
+  				mobileMenuOn = false;
   				toggleMobileMenuOff();
   			} else {
+  				mobileMenuOn = true;
   				toggleMobileMenuOn();
   			}
 		});
@@ -105,6 +119,7 @@
 			$("#nav").css("display", "inline-block");
 			$("#mobile").css("display", "none");
 			$("#contentContainer").css("margin-top", "70px");
+			$("#nav").css("width", "");
 		}
 	</script>
 	
