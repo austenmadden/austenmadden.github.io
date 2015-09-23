@@ -22,6 +22,7 @@
 			} else { 
 				mobileMenuOn = true; 
 			}
+			menuToggled = false;
 			var navHeight = parseInt($('.select').css('height')); 
 			
 			$("#about").click(function() {
@@ -85,9 +86,16 @@
 			})
 
 			$("#mobile").click(function() {
-				$(".select").css("height", "100%");
-				$("#nav").css("display", "block");
-				$("#nav").css("width", "100px");
+				if (!menuToggled) {
+					$(".select").css("height", "100%");
+					$("#nav").css("display", "block");
+					$("#nav").css("width", "100px");
+					menuToggled = true;
+				} else {
+					$(".select").css("height", "");
+					$("#nav").css("display", "none");
+					menuToggled = false;
+				}
 
 			})
 			
