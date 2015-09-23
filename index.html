@@ -16,53 +16,106 @@
 	
 	<script>
 		$(document).ready(function(){
-			$(".about").fadeIn();
+			width = $(window).width(); 
+			if (width >= 450) {
+				mobileMenuOn = false;
+			} else { 
+				mobileMenuOn = true; 
+			}
 			var navHeight = parseInt($('.select').css('height')); 
-						   
+			
 			$("#about").click(function() {
 				$('html, body').animate({
                         scrollTop: $(".about").offset().top - navHeight
                     }, 1000);
+				$(".select").css("height", "");
+				$("#nav").css("display", "none");
 			})
 
 			$("#experience").click(function() {
 				$('html, body').animate({
                         scrollTop: $(".companies").offset().top - navHeight
                     }, 1000);
+				$(".select").css("height", "");
+				$("#nav").css("display", "none");
 			})
 
 			$("#projects").click(function() {
 				$('html, body').animate({
                         scrollTop: $(".projects").offset().top - navHeight
                     }, 1000);
+				$(".select").css("height", "");
+				$("#nav").css("display", "none");
 			})
 			
 			$("#home").click(function() {
 				$('html, body').animate({
                         scrollTop: $(".home").offset().top - navHeight
                     }, 1000);
+				$(".select").css("height", "");
+				$("#nav").css("display", "none");
 			})
 			
 			$("#social").click(function() {
 				$('html, body').animate({
                         scrollTop: $(".social").offset().top - navHeight
                     }, 1000);
+				$(".select").css("height", "");
+				$("#nav").css("display", "none");
 			})
 
 			$("#skills").click(function() {
 				$('html, body').animate({
                         scrollTop: $(".skills").offset().top - navHeight
                     }, 1000);
+				$(".select").css("height", "");
+				$("#nav").css("display", "none");
+			})
+
+			$("#mobile").click(function() {
+				$(".select").css("height", "100%");
+				$("#nav").css("display", "block");
+				$("#nav").css("width", "100px");
+
 			})
 			
+			if (mobileMenuOn) {
+				toggleMobileMenuOn();
+			}
 
 		});
+
+		$(window).resize(function() {
+  			// This will execute whenever the window is resized
+  			width = $(window).width(); // New width
+  			if (width >= 450) {
+  				toggleMobileMenuOff();
+  			} else {
+  				toggleMobileMenuOn();
+  			}
+		});
+
+		function toggleMobileMenuOn() {
+			 $("#nav").css("display", "none");
+			 $("#mobile").css("display", "block");
+			 $("#contentContainer").css("margin-top", "0px");
+		}
+
+		function toggleMobileMenuOff() {
+			$("#nav").css("display", "inline-block");
+			$("#mobile").css("display", "none");
+			$("#contentContainer").css("margin-top", "70px");
+		}
 	</script>
 	
 	<body>
 	
 	<div class = "select">
-		<ul>
+		<div class = "mobile" id = "mobile">
+				Menu
+		</div>
+
+		<ul id = "nav">
 			<li id = "about">About</li>
 			<li id = "experience">Experience</li>
 			<li id = "projects">Projects</li>
@@ -70,7 +123,7 @@
 			<li id = "social"> Social</li>
 		</ul>
 	</div>
-	<div class = "content">
+	<div class = "content" id = "contentContainer">
 
 		<div class = "about">
 			<div class = "bio">
