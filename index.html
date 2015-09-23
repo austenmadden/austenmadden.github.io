@@ -26,6 +26,9 @@
 			var navHeight = parseInt($('.select').css('height')); 
 			
 			$("#about").click(function() {
+				if (mobileMenuOn) {
+					navHeight = parseInt($('#mobile').css('height'));
+				}
 				$('html, body').animate({
                         scrollTop: $(".about").offset().top - navHeight
                     }, 1000);
@@ -36,6 +39,9 @@
 			})
 
 			$("#experience").click(function() {
+				if (mobileMenuOn) {
+					navHeight = parseInt($('#mobile').css('height'));
+				}
 				$('html, body').animate({
                         scrollTop: $(".companies").offset().top - navHeight
                     }, 1000);
@@ -46,6 +52,9 @@
 			})
 
 			$("#projects").click(function() {
+				if (mobileMenuOn) {
+					navHeight = parseInt($('#mobile').css('height'));
+				}
 				$('html, body').animate({
                         scrollTop: $(".projects").offset().top - navHeight
                     }, 1000);
@@ -56,6 +65,9 @@
 			})
 			
 			$("#home").click(function() {
+				if (mobileMenuOn) {
+					navHeight = parseInt($('#mobile').css('height'));
+				}
 				$('html, body').animate({
                         scrollTop: $(".home").offset().top - navHeight
                     }, 1000);
@@ -66,6 +78,9 @@
 			})
 			
 			$("#social").click(function() {
+				if (mobileMenuOn) {
+					navHeight = parseInt($('#mobile').css('height'));
+				}
 				$('html, body').animate({
                         scrollTop: $(".social").offset().top - navHeight
                     }, 1000);
@@ -76,6 +91,9 @@
 			})
 
 			$("#skills").click(function() {
+				if (mobileMenuOn) {
+					navHeight = parseInt($('#mobile').css('height'));
+				}
 				$('html, body').animate({
                         scrollTop: $(".skills").offset().top - navHeight
                     }, 1000);
