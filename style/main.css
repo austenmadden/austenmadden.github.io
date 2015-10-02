@@ -38,20 +38,49 @@ li {
 
 }
 
-.select {
+.landing {
+  height: 100vh;
+  background-image: url("file:///Users/o631468/project/class/austenmadden.github.io/img/Lake.jpg");
+  background-repeat: no-repeat;
+  background-position: center; 
+  display: block;
+}
 
-  font-family: Helvetica, sans-serif;
+.landing h1 {
+  margin-left: 250px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.select {
   font-size: 16pt;
   text-align: center;
+  background-color: rgba(255, 255, 255, 1);
   margin: 0px;
-  background-color: white;
   color: #bb0000;
   position: fixed;
   top: 0;
   overflow: hidden;
   width: 100%;
-  border-bottom: solid #E9E9E9 1px;
+  border-bottom: solid rgba(233, 233, 233, 1) 1px;
 }
+
+.selectStart {
+  font-size: 16pt;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0px;
+  color: white;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: solid rgba(233, 233, 233, 0) 1px;
+}
+
+
 
 .select li {
     font-size: 16pt;
@@ -63,7 +92,6 @@ li {
 }
   
 body {
-  font-family: Helvetica, sans-serif;
   color: #323232;
   margin: 0px;
 }
@@ -175,19 +203,15 @@ body {
 }
 
 div.content {
-  margin-top: 70px;
-  padding-top: 40px;
   width: 100%;
   margin-left: 0px;
   margin-right: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  background-color: #bb0000;
 }
 
 
 p {
-  font-family: Helvetica, sans-serif;
   color: white;
   font-size: 16pt;
   line-height: 22pt;
@@ -233,6 +257,7 @@ p {
 
 div.bio {
   padding-top: 30px;
+  margin-top: 70px;
   padding-bottom: 30px;
   background-color: #bb0000;
 }
@@ -275,7 +300,6 @@ h1 {
   text-align: left;
   display: none;
   color: #bb0000;
-  font-family: Helvetica, sans-serif;
   font-size: 16pt;
   font-weight: 200;
   padding: 5px;
