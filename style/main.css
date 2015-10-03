@@ -11,7 +11,7 @@ html {
 h2 {
   font-size: 18pt;
   line-height: 100%;
-  color: #bb0000;
+  color: #080808;
   text-align: justify;
   width: 80%;
   margin-left: auto;
@@ -58,13 +58,34 @@ li {
   text-align: center;
   background-color: rgba(255, 255, 255, 1);
   margin: 0px;
-  color: #bb0000;
+  color: #080808;
   position: fixed;
   top: 0;
   overflow: hidden;
   width: 100%;
   border-bottom: solid rgba(233, 233, 233, 1) 1px;
   z-index: 2;
+}
+
+.select a:link {
+    text-decoration: none;
+   color: #080808;
+}
+
+.select a:visited {
+    text-decoration: none;
+  color: #080808;
+}
+
+.select a:hover {
+    text-decoration: none;
+  color:#080808;
+
+}
+
+.select a:active {
+    text-decoration: none;
+  color:#080808;
 }
 
 .selectStart {
@@ -80,15 +101,29 @@ li {
   border-bottom: solid rgba(233, 233, 233, 0) 1px;
 }
 
-
-
-.select li {
-    font-size: 16pt;
-    font-weight: 200;
+.selectStart a:link {
+    text-decoration: none;
+   color: white;
 }
 
-.select a {
+.selectStart a:visited {
+    text-decoration: none;
   color: white;
+}
+
+.selectStart a:hover {
+    text-decoration: none;
+  color: white;
+
+}
+
+.selectStart a:active {
+    text-decoration: none;
+  color: white;
+}
+
+#linkEnd {
+  margin-right: 20vw;
 }
   
 body {
@@ -102,17 +137,17 @@ body {
 
 
 .about {
-  background-color: #bb0000;
+  background-color: #080808;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 745px) {
 
-  .social ul {
-    width: 100px;
+  .select li a {
+    display: none;
   }
 
-  .social li {
-    padding: 20px;
+  .selectStart li a {
+    display: none;
   }
 }
 
@@ -121,9 +156,7 @@ body {
 }
 
 .social {
-  background-color: white;
-  padding-top: 30px;
-  z-index: 1;
+
 
 }
 
@@ -214,6 +247,7 @@ div.content {
   margin-right: 0px;
   padding-left: 0px;
   padding-right: 0px;
+  background-color: #080808;
 }
 
 
@@ -233,23 +267,23 @@ p {
 
 .social a:link {
     text-decoration: none;
-	 color: #bb0000;
+	 color: #080808;
 }
 
 .social a:visited {
     text-decoration: none;
-	color: #bb0000;
+	color: #080808;
 }
 
 .social a:hover {
     text-decoration: none;
-	color: #666666;
+	color:#080808;
 
 }
 
 .social a:active {
     text-decoration: none;
-	color: #bb0000;
+	color:#080808;
 }
 
 .img-circle {
@@ -265,7 +299,7 @@ div.bio {
   padding-top: 30px;
   margin-top: 70px;
   padding-bottom: 30px;
-  background-color: #bb0000;
+  background-color: #080808;
 }
 
 div.companies {
@@ -275,9 +309,8 @@ div.companies {
 }
 
 div.skills {
-  background-color: #bb0000;
+  background-color: #080808;
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 div.companies p {
@@ -305,7 +338,7 @@ h1 {
 .mobile {
   text-align: left;
   display: none;
-  color: #bb0000;
+  color: #080808;
   font-size: 16pt;
   font-weight: 200;
   padding: 5px;
