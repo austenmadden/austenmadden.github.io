@@ -9,6 +9,7 @@
 		
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="style/main.css">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		
 		<title>Austen Madden</title>
@@ -135,10 +136,14 @@
 
     			if (scrollDistance === 0) {
     				$('#select').addClass("selectStart");
+    				$('#mobile').addClass("mobileStart");
     				$('#select').removeClass("select");
+    				$('#mobile').removeClass("mobile");
     			} else {
     				$('#select').addClass("select");
+    				$('#mobile').addClass("mobile");
     				$('#select').removeClass("selectStart");
+    				$('#mobile').removeClass("mobileStart");
     			}
 			});
 			
@@ -177,7 +182,7 @@
 	<body>
 	
 	<div class = "selectStart" id = "select">
-		<div class = "mobile" id = "mobile">
+		<div class = "mobileStart" id = "mobile">
 				Menu
 		</div>
 
