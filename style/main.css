@@ -39,7 +39,7 @@ li {
 
 .landing {
   height: 100vh;
-  background-image: url("file:///Users/o631468/project/class/austenmadden.github.io/img/landing.jpg");
+  background-image: url("http://austenmadden.github.io/img/landing.jpg");
   background-repeat: no-repeat;
   background-position: center; 
   display: block;
