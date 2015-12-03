@@ -17,9 +17,24 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   max-width: 768px;
+  padding-bottom: 25px;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
   	
+}
+
+.company {
+  font-size: 22pt;
+  line-height: 100%;
+  color: #FF8300;
+  text-align: justify;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 768px;
+  padding-bottom: 10px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
 }
 
 ul {
@@ -52,6 +67,21 @@ li {
   -webkit-margin-after: 0px;
   color: white;
   padding-bottom: 10px;
+  padding-top: 50vh;
+}
+
+.jobTitle {
+  font-size: 16pt;
+  line-height: 100%;
+  color: #080808;
+  text-align: justify;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 768px;
+  padding-bottom: 25px;
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
 }
 
 .select {
@@ -264,7 +294,9 @@ p {
   max-width: 768px;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
+  padding-bottom: 25px;
 }
+
 
 .social a:link {
     text-decoration: none;
