@@ -180,6 +180,10 @@ body {
   .selectStart li a {
     display: none;
   }
+
+  .social {
+    background-color: white;
+  }
 }
 
 .about p {
