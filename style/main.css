@@ -360,6 +360,10 @@ div.projects {
   padding-bottom: 30px;
 }
 
+div.projects h2 {
+  color: white;
+}
+
 div.companies h1 {
   color: black;
 }
