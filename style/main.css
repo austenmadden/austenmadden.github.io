@@ -191,8 +191,7 @@ body {
 }
 
 .social {
-
-
+  display: none;
 }
 
 .contact {
@@ -346,7 +345,7 @@ div.companies {
 }
 
 div.skills {
-  background-color: #080808;
+  background-color: #E8704E;
   padding-top: 30px;
 }
 
@@ -355,7 +354,7 @@ div.companies p {
 }
 
 div.projects {
-  background-color: #666666;
+  background-color: #A37B85;
   padding-top: 30px;
   padding-bottom: 30px;
 }
