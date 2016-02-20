@@ -183,6 +183,7 @@ body {
 
   .social {
     background-color: white;
+    display: block;
   }
 }
 
