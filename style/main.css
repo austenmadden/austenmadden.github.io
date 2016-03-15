@@ -111,7 +111,6 @@ li {
 .select a:hover {
     text-decoration: none;
   color:#080808;
-
 }
 
 .select a:active {
@@ -145,7 +144,6 @@ li {
 .selectStart a:hover {
     text-decoration: none;
   color: white;
-
 }
 
 .selectStart a:active {
@@ -166,6 +164,9 @@ body {
   padding-bottom: 20px
 }
 
+.social {
+  display: none;
+}
 
 .about {
   background-color: #080808;
@@ -189,10 +190,6 @@ body {
 
 .about p {
   text-align: justify;
-}
-
-.social {
-  display: none;
 }
 
 .contact {
@@ -401,4 +398,3 @@ h1 {
   cursor: pointer;
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
-
