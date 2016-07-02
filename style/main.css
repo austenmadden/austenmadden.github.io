@@ -20,7 +20,6 @@ h2 {
   padding-bottom: 25px;
   -webkit-margin-before: 0px;
   -webkit-margin-after: 0px;
-
 }
 
 .company {
@@ -198,7 +197,7 @@ body {
 }
 
 #home {
-	cursor: pointer;
+  cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
@@ -302,23 +301,23 @@ p {
 
 .social a:link {
     text-decoration: none;
-	 color: #080808;
+   color: #080808;
 }
 
 .social a:visited {
     text-decoration: none;
-	color: #080808;
+  color: #080808;
 }
 
 .social a:hover {
     text-decoration: none;
-	color:#080808;
+  color:#080808;
 
 }
 
 .social a:active {
     text-decoration: none;
-	color:#080808;
+  color:#080808;
 }
 
 .img-circle {
