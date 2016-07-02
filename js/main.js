@@ -1,13 +1,13 @@
 $(document).ready(function(){
-	width = $(window).width(); 
+	width = $(window).width();
 	if (width >= 745) {
 		mobileMenuOn = false;
-	} else { 
-		mobileMenuOn = true; 
+	} else {
+		mobileMenuOn = true;
 	}
 	menuToggled = false;
-	var navHeight = parseInt($('#select').css('height')); 
-	
+	var navHeight = parseInt($('#select').css('height'));
+
 	$("#about").click(function() {
 		if (mobileMenuOn) {
 			navHeight = parseInt($('#mobile').css('height'));
@@ -52,7 +52,7 @@ $(document).ready(function(){
 			$("#nav").css("display", "none");
 		}
 	})
-	
+
 	$("#home").click(function() {
 		if (mobileMenuOn) {
 			navHeight = parseInt($('#mobile').css('height'));
@@ -67,7 +67,7 @@ $(document).ready(function(){
 			$("#nav").css("display", "none");
 		}
 	})
-	
+
 	$("#social").click(function() {
 		if (mobileMenuOn) {
 			navHeight = parseInt($('#mobile').css('height'));
@@ -114,21 +114,22 @@ $(document).ready(function(){
 
 	$(window).scroll(function() {
 		var scrollDistance = $(window).scrollTop();
-		
 
 		if (scrollDistance === 0) {
 			$('#select').addClass("selectStart");
 			$('#mobile').addClass("mobileStart");
 			$('#select').removeClass("select");
 			$('#mobile').removeClass("mobile");
+			$('#nav').addClass("shadow")
 		} else {
 			$('#select').addClass("select");
 			$('#mobile').addClass("mobile");
 			$('#select').removeClass("selectStart");
 			$('#mobile').removeClass("mobileStart");
+			$('#nav').removeClass("shadow")
 		}
 	});
-	
+
 	if (mobileMenuOn) {
 		toggleMobileMenuOn();
 	}
