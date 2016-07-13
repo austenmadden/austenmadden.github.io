@@ -113,8 +113,9 @@ $(document).ready(function(){
 
   $(window).scroll(function() {
     var scrollDistance = $(window).scrollTop();
-		var aboutPicDistance = 350//$('.landing').offset().top
-
+    var halfOfScreen = $(window).height()/2
+    var aboutPicDistance = $('.bio').offset().top - navHeight - halfOfScreen
+    console.log(halfOfScreen, scrollDistance, aboutPicDistance)
     if (scrollDistance === 0) {
 			atStartState()
     } else {
