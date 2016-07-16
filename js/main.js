@@ -2,11 +2,13 @@ $(document).ready(function(){
   width = $(window).width();
   if (width >= 745) {
     mobileMenuOn = false;
+    var navHeight = parseInt($('#select').css('height'));
   } else {
     mobileMenuOn = true;
+    var navHeight = parseInt($('#mobile').css('height'));
   }
   menuToggled = false;
-  var navHeight = parseInt($('#select').css('height'));
+
 
   $('#about').click(function() {
     if (mobileMenuOn) {
@@ -115,7 +117,6 @@ $(document).ready(function(){
     var scrollDistance = $(window).scrollTop();
     var halfOfScreen = $(window).height()/2
     var aboutPicDistance = $('.bio').offset().top - navHeight - halfOfScreen
-    console.log(halfOfScreen, scrollDistance, aboutPicDistance)
     if (scrollDistance === 0) {
 			atStartState()
     } else {
@@ -142,9 +143,11 @@ $(window).resize(function() {
     if (width >= 745) {
       mobileMenuOn = false;
       toggleMobileMenuOff();
+      navHeight = parseInt($('#select').css('height'));
     } else {
       mobileMenuOn = true;
       toggleMobileMenuOn();
+      navHeight = parseInt($('#mobile').css('height'));
     }
 });
 
