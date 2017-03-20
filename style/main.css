@@ -8,19 +8,52 @@ html {
   overflow-x: hidden;
 }
 
-a {
-  
+.flex {
+  display: inline-flex;
 }
 
-.bio {
+.center {
+  margin-top: 40vh;
+}
 
+.panel {
+  width: 50vw;
+  height: 100vh;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+h1 {
+  max-width: 35vw;
+  margin: auto;
+  border-bottom: 10px red solid;
 }
 
 .unstyled {
+  padding: 0;
+  margin: 20px 0 0 0;
   list-style: none;
 }
 
 .inline li {
   display: inline;
-  padding-right: 4%
+  padding: 50vw 15px 50vw 15px;
+}
+
+.inline li:hover {
+  background-color: red;
+}
+
+.inline li a {
+  color: black;
+}
+
+.inline li:hover a {
+  color: white;
 }
