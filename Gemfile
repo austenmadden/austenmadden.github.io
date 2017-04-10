@@ -12,7 +12,7 @@ ruby RUBY_VERSION
 gem "jekyll", "3.4.2"
 
 # Use my own theme Sanguine.
-gem "sanguine", "~> 0.1.0"
+gem "sanguine"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.

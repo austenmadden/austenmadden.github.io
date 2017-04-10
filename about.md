@@ -4,12 +4,21 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# About
+Appreciate your interest! I spend my time at [CoverMyMeds](https://covermymeds.com) working to improve the healthcare experience, primarily developing [Rails](http://rubyonrails.org/) applications. I enjoy full-stack development, getting to work with all the tools and languages needed to bring a modern application to an end user. While I'm by no means an expert, I've recently enjoyed exploring functional programming via [Elixir](http://elixir-lang.org/) and I am hoping to ship an application using [Phoenix](http://www.phoenixframework.org/) someday.
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
+## Experience
+You might be looking for just a quick summary of some of the things I'm familiar with. Gotcha covered!
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+### Languages
+[Ruby](https://www.ruby-lang.org/en/),
+[Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript),
+[Elixir](http://elixir-lang.org/),
+[Java](https://en.wikipedia.org/wiki/Java_(programming_language)),
+[C#](https://msdn.microsoft.com/en-us/library/kx37x362.aspx)
+
+### Frameworks
+[Ruby on Rails](http://rubyonrails.org/),
+[React](https://facebook.github.io/react/),
+[Android](https://developer.android.com/index.html),
+[.Net MVC](https://www.asp.net/mvc)
